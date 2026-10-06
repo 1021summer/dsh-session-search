@@ -1,0 +1,41 @@
+{
+  "name": "dsh-session-search",
+  "description": "会话全文搜索浮窗 · 给 DeepSeek Harness 侧边栏加一个搜索入口，按关键词搜 DSH 里的全部历史会话（主机端直读 session.jsonl.zstd，零第三方依赖），点击命中可精准定位到那条消息行并高亮。",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "keywords": [
+    "deepseek",
+    "dsh",
+    "session",
+    "search",
+    "history",
+    "cordis"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.15.0"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}

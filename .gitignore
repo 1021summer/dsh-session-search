@@ -1,0 +1,23 @@
+# 依赖
+node_modules/
+
+# 环境变量与密钥（本插件零依赖、无需密钥；此处为通用防护）
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+
+# 编辑器与系统
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# 日志与临时产物
+*.log
+*.tmp
+coverage/
+.cache/
