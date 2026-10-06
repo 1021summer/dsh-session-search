@@ -1,0 +1,4 @@
+# dsh-session-search bundle patch: inserts the plugin row into the web roster.
+- insert:
+    - id: session-search
+      name: 'dsh-session-search'
